@@ -12,9 +12,20 @@ public class HelloWorld {
         String dan = "Dan Hoying";
         System.out.println(dan);
 
-        int danSalary = 32;
-        int monthly = danSalary * 4;
-        System.out.println(danSalary);
-        System.out.println(monthly);
+        int danWeeklySalary = 32;
+        int danMonthlySalary = danWeeklySalary * 4;
+        System.out.println("Weekly salary: " + danWeeklySalary);
+        System.out.println("Monthly salary: " + danMonthlySalary);
+
+        int apples = 6;
+        int oranges = 5;
+        int fruit = apples - oranges;
+        System.out.println("I have " + fruit + " fruit");
+
+        int weeks = 130;
+        double years = weeks / 52.0;
+        System.out.println(weeks + " weeks is " + years + " years");
+
+        System.out.println("Hello, " + dan + " here");
     }
 }
