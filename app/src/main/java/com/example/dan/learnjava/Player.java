@@ -5,15 +5,19 @@ package com.example.dan.learnjava;
  */
 
 public class Player {
-    private handleName;
-    private lives;
-    private level;
-    private score;
+    private String handleName;
+    private int lives;
+    private int level;
+    private int score;
 
     public Player() {
         handleName = "Unknown player";
         lives = 3;
         level = 1;
         score = 0;
+    }
+
+    public String getHandleName() {
+        return handleName;
     }
 }
