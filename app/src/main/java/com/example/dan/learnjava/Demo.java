@@ -7,6 +7,6 @@ package com.example.dan.learnjava;
 public class Demo {
     public static void main(String[] args) {
         Player dan = new Player();
-        System.out.println(dan.handleName);
+        System.out.println(dan.getHandleName());
     }
 }
