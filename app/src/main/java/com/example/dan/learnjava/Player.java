@@ -22,6 +22,9 @@ public class Player {
     }
 
     public void setHandleName(String handle) {
+        if (handle.length() < 3) {
+            return;
+        }
         handleName = handle;
     }
 }
