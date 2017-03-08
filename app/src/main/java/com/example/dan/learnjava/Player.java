@@ -20,4 +20,8 @@ public class Player {
     public String getHandleName() {
         return handleName;
     }
+
+    public void setHandleName(String handle) {
+        handleName = handle;
+    }
 }
