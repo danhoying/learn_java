@@ -11,10 +11,7 @@ public class Player {
     private int score;
 
     public Player() {
-        handleName = "Unknown player";
-        lives = 3;
-        level = 1;
-        score = 0;
+        this("Unknown player");
     }
 
     public Player(String handle) {
