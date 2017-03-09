@@ -17,6 +17,13 @@ public class Player {
         score = 0;
     }
 
+    public Player(String handle) {
+        handleName = handle;
+        lives = 3;
+        level = 1;
+        score = 0;
+    }
+
     public String getHandleName() {
         return handleName;
     }

@@ -10,5 +10,8 @@ public class Demo {
         System.out.println(dan.getHandleName());
         dan.setHandleName("Dan");
         System.out.println(dan.getHandleName());
+
+        Player louise = new Player("Louise");
+        System.out.println(louise.getHandleName());
     }
 }
