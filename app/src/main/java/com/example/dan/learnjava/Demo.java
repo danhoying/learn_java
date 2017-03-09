@@ -13,5 +13,8 @@ public class Demo {
 
         Player louise = new Player("Louise");
         System.out.println(louise.getHandleName());
+
+        Player gr8 = new Player("gr8", 9);
+        System.out.println(gr8.getHandleName());
     }
 }
