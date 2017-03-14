@@ -37,6 +37,11 @@ public class Player {
         this.handleName = handle;
     }
 
+    public void setNameAndLevel(String name, int level) {
+        this.handleName = name;
+        this.level = level;
+    }
+
     public int getLives() {
         return lives;
     }
