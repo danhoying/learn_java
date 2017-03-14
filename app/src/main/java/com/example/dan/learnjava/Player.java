@@ -28,6 +28,7 @@ public class Player {
         setLives(3);
         setLevel(startingLevel);
         setScore(0);
+        setDefaultWeapon();
     }
 
     public String getHandleName() {
@@ -40,6 +41,10 @@ public class Player {
             return;
         }
         this.handleName = handle;
+    }
+
+    private void setDefaultWeapon() {
+        this.weapon = new Weapon("Sword", 10, 20);
     }
 
     public void setNameAndLevel(String name, int level) {
@@ -69,5 +74,13 @@ public class Player {
 
     public void setScore(int score) {
         this.score = score;
+    }
+
+    public Weapon getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
     }
 }
