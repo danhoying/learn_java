@@ -9,6 +9,7 @@ public class Player {
     private int lives;
     private int level;
     private int score;
+    private Weapon weapon;
 
     public Player() {
         this("Unknown player");
