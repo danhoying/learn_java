@@ -1,5 +1,7 @@
 package com.example.dan.learnjava;
 
+import java.util.ArrayList;
+
 /**
  * Created by dan on 3/3/17.
  */
@@ -10,6 +12,7 @@ public class Player {
     private int level;
     private int score;
     private Weapon weapon;
+    private ArrayList<Loot> inventory;
 
     public Player() {
         this("Unknown player");
@@ -28,7 +31,8 @@ public class Player {
         setLives(3);
         setLevel(startingLevel);
         setScore(0);
-        setDefaultWeapon();
+//        setDefaultWeapon();
+        inventory = new ArrayList<>();
     }
 
     public String getHandleName() {
@@ -82,5 +86,13 @@ public class Player {
 
     public void setWeapon(Weapon weapon) {
         this.weapon = weapon;
+    }
+
+    public ArrayList<Loot> getInventory() {
+        return inventory;
+    }
+
+    public void setInventory(ArrayList<Loot> inventory) {
+        this.inventory = inventory;
     }
 }
