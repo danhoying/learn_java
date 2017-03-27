@@ -31,7 +31,7 @@ public class Player {
         setLives(3);
         setLevel(startingLevel);
         setScore(0);
-//        setDefaultWeapon();
+        setDefaultWeapon();
         inventory = new ArrayList<>();
     }
 

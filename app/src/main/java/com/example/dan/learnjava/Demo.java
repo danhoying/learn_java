@@ -1,5 +1,7 @@
 package com.example.dan.learnjava;
 
+import java.util.ArrayList;
+
 /**
  * Created by dan on 3/8/17.
  */
@@ -15,5 +17,14 @@ public class Demo {
         Weapon myAxe = new Weapon("Goldshine Axe", 15, 50);
         dan.setWeapon(myAxe);
         System.out.println(dan.getWeapon().getName());
+
+        Loot redPotion = new Loot("Red Potion", LootType.POTION, 7);
+        dan.pickUpLoot(redPotion);
+
+        ArrayList<Loot> allItems = dan.getInventory();
+
+        for(Loot item : allItems) {
+            System.out.println(item.getName());
+        }
     }
 }
