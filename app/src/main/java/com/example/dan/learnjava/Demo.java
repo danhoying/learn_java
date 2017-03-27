@@ -24,5 +24,10 @@ public class Demo {
         dan.pickUpLoot(new Loot("Invisibility Potion", LootType.POTION, 35));
 
         dan.showInventory();
+
+//        Loot bluePotion = new Loot("Blue Potion", LootType.POTION, 6);
+        boolean wasDeleted = dan.dropLoot(redPotion);
+        System.out.println(wasDeleted);
+        dan.showInventory();
     }
 }
