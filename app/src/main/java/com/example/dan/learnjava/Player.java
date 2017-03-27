@@ -107,4 +107,12 @@ public class Player {
         }
         return false;
     }
+
+    public void showInventory () {
+        for(Loot item : inventory) {
+            System.out.println(item.getName());
+        }
+
+        System.out.println("========================================");
+    }
 }

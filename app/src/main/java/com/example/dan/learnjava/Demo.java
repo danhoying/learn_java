@@ -1,7 +1,5 @@
 package com.example.dan.learnjava;
 
-import java.util.ArrayList;
-
 /**
  * Created by dan on 3/8/17.
  */
@@ -25,10 +23,6 @@ public class Demo {
         dan.pickUpLoot(new Loot("Ring of Protection +2", LootType.RING, 40));
         dan.pickUpLoot(new Loot("Invisibility Potion", LootType.POTION, 35));
 
-        ArrayList<Loot> allItems = dan.getInventory();
-
-        for(Loot item : allItems) {
-            System.out.println(item.getName());
-        }
+        dan.showInventory();
     }
 }
