@@ -26,6 +26,10 @@ public class Enemy {
         }
     }
 
+    public void showInfo() {
+        System.out.println("Name: " + this.name + " Hitpoints: " + this.hitPoints + " Lives: " + this.lives);
+    }
+
     public String getName() {
         return name;
     }
