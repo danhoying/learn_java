@@ -5,7 +5,7 @@ package com.example.dan.learnjava;
  */
 
 public class Troll extends Enemy {
-    public Troll(String name, int hitPoints, int lives) {
-        super(name, hitPoints, lives);
+    public Troll(String name) {
+        super(name, 27, 1);
     }
 }

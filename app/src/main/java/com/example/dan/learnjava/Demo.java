@@ -13,7 +13,8 @@ public class Demo {
 //        enemy.takeDamage(38);
 //        enemy.showInfo();
 
-        Troll uglyTroll = new Troll("Ugly Troll", 27, 1);
+        Troll uglyTroll = new Troll("Ugly Troll");
         uglyTroll.showInfo();
+        uglyTroll.takeDamage(30);
     }
 }
