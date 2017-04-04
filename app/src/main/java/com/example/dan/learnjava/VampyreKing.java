@@ -7,7 +7,7 @@ package com.example.dan.learnjava;
 public class VampyreKing extends Vampyre {
     public VampyreKing(String name) {
         super(name);
-        this.setHitPoints(140);
+        setHitPoints(140);
     }
 
     @Override
