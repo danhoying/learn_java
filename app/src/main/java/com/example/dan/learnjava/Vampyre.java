@@ -11,6 +11,7 @@ public class Vampyre extends Enemy {
 
     @Override
     public void takeDamage(int damage) {
-        super.takeDamage(damage / 2);
+        int damageDone = (damage / 2);
+        super.takeDamage(damageDone);
     }
 }
