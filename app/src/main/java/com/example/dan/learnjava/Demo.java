@@ -9,8 +9,13 @@ public class Demo {
         VampyreKing drac = new VampyreKing("Drac");
         drac.showInfo();
         while (drac.getLives() > 0) {
-            drac.takeDamage(20);
-            drac.showInfo();
+            if (drac.runAway()) {
+                System.out.println("Drac ran away");
+                break;
+            } else {
+                drac.takeDamage(20);
+                drac.showInfo();
+            }
         }
     }
 
