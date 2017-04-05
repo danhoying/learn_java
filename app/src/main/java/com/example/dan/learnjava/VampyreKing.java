@@ -15,5 +15,12 @@ public class VampyreKing extends Vampyre {
         super.takeDamage(damage / 2);
     }
 
-
+    public boolean runAway() {
+//        if (getLives() < 2) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+        return (getLives() < 2);
+    }
 }
