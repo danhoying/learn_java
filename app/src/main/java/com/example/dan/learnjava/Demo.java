@@ -6,11 +6,14 @@ package com.example.dan.learnjava;
 
 public class Demo {
     public static void main(String[] args) {
-        VampyreKing drac = new VampyreKing("Drac");
+        VampyreKing drac = new VampyreKing("Dracula");
         drac.showInfo();
         while (drac.getLives() > 0) {
+            if (drac.dodges()) {
+                continue;
+            }
             if (drac.runAway()) {
-                System.out.println("Drac ran away");
+                System.out.println("Dracula ran away");
                 break;
             } else {
                 drac.takeDamage(20);

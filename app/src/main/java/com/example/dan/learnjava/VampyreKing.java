@@ -1,5 +1,7 @@
 package com.example.dan.learnjava;
 
+import java.util.Random;
+
 /**
  * Created by dan on 4/4/17.
  */
@@ -22,5 +24,15 @@ public class VampyreKing extends Vampyre {
 //            return false;
 //        }
         return (getLives() < 2);
+    }
+
+    public boolean dodges() {
+        Random rand = new Random();
+        int chance = rand.nextInt(6);
+        if (chance > 3) {
+            System.out.println("Dracula dodges");
+            return true;
+        }
+        return false;
     }
 }
