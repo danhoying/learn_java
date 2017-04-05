@@ -14,4 +14,6 @@ public class VampyreKing extends Vampyre {
     public void takeDamage(int damage) {
         super.takeDamage(damage / 2);
     }
+
+
 }

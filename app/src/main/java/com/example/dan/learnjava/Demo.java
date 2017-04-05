@@ -8,8 +8,10 @@ public class Demo {
     public static void main(String[] args) {
         VampyreKing drac = new VampyreKing("Drac");
         drac.showInfo();
-        drac.takeDamage(20);
-        drac.showInfo();
+        while (drac.getLives() > 0) {
+            drac.takeDamage(20);
+            drac.showInfo();
+        }
     }
 
 }
