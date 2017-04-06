@@ -34,6 +34,8 @@ public class Demo {
         conan.pickUpLoot(new Loot("Health Potion", LootType.POTION, 3));
         conan.pickUpLoot(new Loot("Silver Ring", LootType.RING, 6));
         conan.showInventory();
+
+        System.out.println(conan.score());
     }
 
 }

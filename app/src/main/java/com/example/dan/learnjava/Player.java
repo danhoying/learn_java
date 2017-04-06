@@ -115,4 +115,14 @@ public class Player {
 
         System.out.println("========================================");
     }
+
+    public int score() {
+        int total = 0;
+        for(int = 0; i < inventory.size(); i++) {
+            Loot currentLoot = inventory.get(i);
+            System.out.println(currentLoot.getName() + " is worth " + currentLoot.getValue());
+            total = total + currentLoot.getValue();
+        }
+        return total;
+    }
 }
