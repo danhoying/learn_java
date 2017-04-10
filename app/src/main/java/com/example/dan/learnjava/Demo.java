@@ -6,24 +6,24 @@ package com.example.dan.learnjava;
 
 public class Demo {
     public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            VampyreKing drac = new VampyreKing("Dracula");
-            drac.showInfo();
+        VampyreKing drac = new VampyreKing("Dracula");
+        drac.showInfo();
 
-            while (drac.getLives() > 0) {
-                if (drac.dodges()) {
-                    continue;
-                }
-                if (drac.runAway()) {
-                    System.out.println("Dracula ran away");
-                    break;
-                } else {
-                    drac.takeDamage(80);
-                    drac.showInfo();
-                }
+        drac.setLives(0);
+        do {
+            if (drac.dodges()) {
+                drac.setLives(drac.getLives() + 1);
+                continue;
             }
-            System.out.println("==================================");
-        }
+            if (drac.runAway()) {
+                System.out.println("Dracula ran away");
+                break;
+            } else {
+                drac.takeDamage(80);
+                drac.showInfo();
+            }
+        } while (drac.getLives() > 0);
+        System.out.println("==================================");
 
 //        Player conan = new Player("Conan");
 //        conan.pickUpLoot(new Loot("Invisibility", LootType.POTION, 4));
